@@ -57,8 +57,7 @@ btnRoll.addEventListener('click', function () {
             document.getElementById(`current--${activePlayer}`).textContent = currentScore;
         } else {
             document.querySelector('body').classList.add('backgournd');
-            // var audio = new Audio('./Untitled.wav');
-            // audio.play();
+          
             setTimeout(function () {
                 document.querySelector('body').classList.remove("backgournd")
             }, 900)
