@@ -32,6 +32,7 @@ main {
     border-radius: 9px;
     overflow: hidden;
     display: flex;
+
 }
 
 .player {
@@ -170,4 +171,83 @@ main {
 
 .hidden {
     display: none;
+}
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        /* Change display property to block */
+    }
+
+    main {
+        flex-direction: column;
+        /* Change flex direction to column */
+        width: auto;
+        /* Remove fixed width */
+        height: auto;
+        /* Remove fixed height */
+        padding: 2rem;
+        /* Add some padding for spacing */
+    }
+
+    section {
+        flex: 0;
+    }
+
+
+    .player {
+        padding: 4rem 2rem;
+        /* Adjust padding for mobile layout */
+    }
+
+
+    .dice {
+        top: 32.5rem;
+        /* margin-bottom: 8rem; */
+        /* height:100rem; */
+        margin: auto;
+        /* Adjust positioning for mobile layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .player-header {
+        margin-bottom: 0;
+    }
+
+    .btn_groups {
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        padding-left:80px;
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn {
+        margin: 3px;
+        padding: 10px;
+        position: static;
+        text-align: center;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .dice {
+        width: auto;
+        height: 7rem;
+    }
+
+    /* Add any additional styles or overrides for mobile layout */
 }
