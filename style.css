@@ -11,6 +11,10 @@ html {
 
 .backgournd {
     background-image: url('./images/dde7195c52a7bfe90930094d6a577dc1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center
 }
 
 body {
@@ -242,7 +246,13 @@ main {
         display: flex;
         flex-direction: row;
     }
-
+    .backgournd {
+        background-image: url('./images/dde7195c52a7bfe90930094d6a577dc1.png');
+        background-size: 100% 100%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 
     .dice {
         width: auto;
