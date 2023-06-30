@@ -56,11 +56,13 @@ btnRoll.addEventListener('click', function () {
             currentScore += dice;
             document.getElementById(`current--${activePlayer}`).textContent = currentScore;
         } else {
+            document.querySelector('main').classList.add("hidden");
             document.querySelector('body').classList.add('backgournd');
             var audio = new Audio('./Untitled.wav');
             audio.play();
             setTimeout(function () {
-                document.querySelector('body').classList.remove("backgournd")
+                document.querySelector('main').classList.remove("hidden");
+                document.querySelector('body').classList.remove("backgournd");
             }, 900)
             switchPlayer();
         }
